@@ -24,7 +24,7 @@
   <div class="w3-card-4 w3-margin w3-white">
     <!-- <img src="/w3images/woods.jpg" alt="Nature" style="width:100%"> -->
     <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
+      <h3><b id="date">TITLE HEADING</b></h3>
       <h5><span class="w3-opacity">This Day That Year</span></h5>
     </div>
 
@@ -57,9 +57,11 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><ion-icon name="arrow-dropleft"></ion-icon></button>
+  <h1 id="date-bottom" align="center">Date</h1>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="prev()"><ion-icon name="arrow-dropleft"></ion-icon></button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><ion-icon name="calendar"></ion-icon></button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><ion-icon name="arrow-dropright"></ion-icon></button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="next()"><ion-icon name="arrow-dropright"></ion-icon></button>
+
 </footer>
 <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 <script src="js/main.js" charset="utf-8"></script>
