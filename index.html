@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>On This Day</title>
+  <title>This Day That Year</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -52,7 +52,19 @@
       <a href="https://github.com/Ritvik19" target="_blank"><ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon></a>
       <a href="https://codepen.io/Ritvik19/" target="_blank"><ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon></a>
     </div>
-  </div><hr>
+  </div>
+  <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <table class="w3-table"><tr>
+        <td style="text-align: left"><button class="w3-button w3-hover-black w3-white w3-padding-small w3-margin-bottom w3-margin-top" onclick="prevMonth()"><ion-icon name="arrow-dropleft"></ion-icon></button></td>
+        <td style="text-align: center"><h3 id="month">Month</h3></td>
+        <td style="text-align: right"><button class="w3-button w3-hover-black w3-white w3-padding-small w3-margin-bottom w3-margin-top" onclick="nextMonth()"><ion-icon name="arrow-dropright"></ion-icon></button></td>
+      </tr></table>
+      <table class="w3-table" id="calender">
+      </table>
+    </div>
+  </div>
+  <hr>
 </div>
 <!-- END Introduction Menu -->
 </div><br>
