@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-<title>On This Day</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="css/master.css">
+<head>
+  <title>On This Day</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
 <body class="w3-light-grey">
 
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32">
-  <h1><b>On This Day</b></h1>
+  <h1><b>This Day That Year</b></h1>
 </header>
 
 <!-- Grid -->
@@ -22,18 +25,18 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <!-- <img src="/w3images/woods.jpg" alt="Nature" style="width:100%"> -->
     <div class="w3-container">
       <h3><b id="date">TITLE HEADING</b></h3>
-      <h5><span class="w3-opacity">This Day That Year</span></h5>
+      <h5><span class="w3-opacity">On This Day in the History</span></h5>
     </div>
-
     <div class="w3-container">
       <p id="content">Content</p>
     </div>
   </div>
+  <!-- END Blog entry -->
   <hr>
 </div>
+<!-- END Blog entries -->
 
 <!-- Introduction menu -->
 <div class="w3-col l4">
@@ -43,9 +46,13 @@
     <div class="w3-container w3-white">
       <h4>Hi I'm <b>Ritvik Rastogi</b></h4>
       <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development and data analytics.</p>
+      <a href="https://ritvikrastogi19.surge.sh/" target="_blank"><ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon></a>
+      <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank"><ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon></a>
+      <a href="https://www.facebook.com/ritvik.rastogi" target="_blank"><ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon></a>
+      <a href="https://github.com/Ritvik19" target="_blank"><ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon></a>
+      <a href="https://codepen.io/Ritvik19/" target="_blank"><ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon></a>
     </div>
   </div><hr>
-
 <!-- END Introduction Menu -->
 </div>
 
@@ -56,13 +63,12 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <h1 id="date-bottom" align="center">Date</h1>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="prev()"><ion-icon name="arrow-dropleft"></ion-icon></button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><ion-icon name="calendar"></ion-icon></button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="next()"><ion-icon name="arrow-dropright"></ion-icon></button>
-
+<footer class="w3-container w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-hover-indigo w3-black w3-padding-large w3-margin-bottom" onclick="prev()"><ion-icon name="arrow-dropleft"></ion-icon></button>
+  <button class="w3-button w3-medium w3-hover-indigo w3-black w3-padding-small w3-margin-bottom"><p id="date-bottom" align="center">Date</p></button>
+  <button class="w3-button w3-hover-indigo w3-black w3-padding-large w3-margin-bottom" onclick="next()"><ion-icon name="arrow-dropright"></ion-icon></button>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 <script src="js/main.js" charset="utf-8"></script>
 </body>
