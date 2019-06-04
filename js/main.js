@@ -31,7 +31,6 @@ function fetchData(month, date)
 {
   document.getElementById('date').innerHTML = title(monthMapping[month]) + ' ' + date;
   document.getElementById('date-bottom').innerHTML = title(monthMapping[month]) + ' ' + date;
-  console.log(fileName(month, date))
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -43,6 +42,7 @@ function fetchData(month, date)
   };
   xhttp.open("GET", fileName(month, date) , true);
   xhttp.send();
+  $("html, body").animate({scrollTop: 0}, 1000);
 }
 
 function next()
@@ -112,5 +112,3 @@ function prev()
 }
 
 fetchData(currentMonth, currentDate)
-console.log(currentDate);
-console.log(currentMonth);
